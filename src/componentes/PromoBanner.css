@@ -1,0 +1,51 @@
+.promo-banner {
+  background-image: url("/public/img/hero/banner1.png"); /* cámbiala por tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 80px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.promo-text {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+}
+
+.promo-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.promo-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.promo-text button {
+  background-color: #d36b8c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.promo-text button:hover {
+  background-color: #b45774;
+}
