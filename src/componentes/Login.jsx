@@ -35,7 +35,7 @@ export default function Login() {
 
         // Guarda los datos del usuario en localStorage si la autenticación fue exitosa
         localStorage.setItem("user", JSON.stringify(user));
-        navigate("/La-Bitacora-Del-Viajero/blog");
+        navigate("/Serenity-SPA/dashboard");
       } else {
         alert("Credenciales incorrectas. Inténtalo de nuevo.");
       }
