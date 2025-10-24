@@ -1,5 +1,5 @@
 .hero {
-  background: url("/public/img/hero/hero1.jpg") center/cover no-repeat;
+  background: url("/img/hero/hero1.jpg") center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;

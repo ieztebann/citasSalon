@@ -31,3 +31,79 @@
 .nav-links li:hover {
   color: #c55a82;
 }
+
+/* --- Icono de usuario --- */
+.user-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 22px;
+  color: #dd9bf7;
+  transition: color 0.3s;
+}
+
+.user-menu:hover .user-icon {
+  color: #c55a82;
+}
+
+/* --- Menú desplegable --- */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  min-width: 150px;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Mostrar menú cuando tiene la clase "show" */
+.dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Mostrar menú al hacer hover sobre el icono o el propio menú */
+.user-menu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown p {
+  margin: 0;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown p:hover {
+  background-color: #f5f5f5;
+  color: #c55a82;
+  cursor: pointer;
+}
+.dropdown-link {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-link:hover {
+  background-color: #f5f5f5;
+  color: #c55a82;
+}
+
