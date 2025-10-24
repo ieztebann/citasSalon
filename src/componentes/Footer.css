@@ -1,23 +1,14 @@
 .footer {
-  background: linear-gradient(180deg, #fff0f6 0%, #ffe1ec 100%);
+  background: linear-gradient(180deg, #faf0f4 0%, #f09ebc 100%);
   color: #444;
   padding: 60px 20px 20px;
   font-family: "Poppins", sans-serif;
   position: relative;
   overflow: hidden;
-  border-top: 2px solid #ffd6e9;
+  border-top: 0px solid #ffd6e9;
 }
 
-.footer::before {
-  content: "❤";
-  position: absolute;
-  font-size: 200px;
-  color: rgba(255, 182, 193, 0.15);
-  bottom: -40px;
-  left: -30px;
-  transform: rotate(-15deg);
-  pointer-events: none;
-}
+
 
 .footer-top {
   display: flex;
@@ -34,10 +25,10 @@
 }
 
 .footer-icon {
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 10px;
-  filter: drop-shadow(0 3px 6px rgba(255, 105, 180, 0.3));
+  filter: drop-shadow(0 3px 6px rgba(144, 95, 201, 0.767));
 }
 
 .footer-title {
@@ -62,6 +53,7 @@
   color: #555;
   font-weight: 500;
   transition: color 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer-links a:hover {
@@ -90,7 +82,7 @@
 }
 
 .footer-social a:hover {
-  background: #e75480;
+  background: #b74ff38c;
   color: white;
   transform: scale(1.1);
 }

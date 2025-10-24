@@ -1,111 +1,173 @@
-/* Reseteo básico */
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+/* Contenedor general */
 .registro-container {
-    display: flex;
-    height: 100vh;
-    background: url('');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    animation: mover-fondo 20s infinite; /* Llama a la animación del fondo */
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  animation: fadeIn 1s ease;
 }
 
-@keyframes mover-fondo {
-    0% {
-        background-position: 0% -100%; /* Empieza desde la parte superior de la imagen (fuera de vista) */
-      }
-      50% {
-        background-position: 50% 100%; /* Mueve la imagen hacia la mitad horizontal y hacia la parte inferior */
-      }
-      100% {
-        background-position: 100% 200%; /* Mueve la imagen completamente hacia abajo, más allá del área visible */
-      }
-     
-  }
-
-.registro-container {
-    display: flex;
-    height: 100vh;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    background-color: #F7F7F7; /* Fondo de la página */
-  
-
+/* Sección de imagen (izquierda) */
+.image-section {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
 }
 
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) saturate(1.1);
+  transition: transform 1.5s ease;
+}
+
+.image-section:hover img {
+  transform: scale(1.05);
+}
+
+/* Contenedor del formulario */
 .form-registro-container {
-    width: 400px; /* Ajusta el ancho de la tarjeta */
-    height: 500px;
-    background-color: #fcfcfcda; /* Fondo azul */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 30px;
-    box-shadow: 0px 4px 10px rgba(116, 18, 196, 0.603); /* Sombra sutil */
-    border-radius: 30px; /* Bordes redondeados */
-    padding: 30px;
-    overflow: hidden; /* Asegura que los bordes redondeados no se vean afectados */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #fff, #fdf2f6);
 }
 
-
-.form-registro-container h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #F7BACC;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
+/* Estilos del formulario */
+form {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
 
-
-.form-registro-container p {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 17px;
-    
+form:hover {
+  transform: scale(1.02);
 }
 
+form h1 {
+  text-align: center;
+  color: #f78fb0;
+  font-family: 'Georgia', serif;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+form p {
+  text-align: center;
+  color: #444;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* Campos de entrada */
 .form-group {
-    margin-bottom: 25px;
-    
-}
-.form-group ::placeholder{
-    font-size: 15px;
-    color: #bd3f74;   
-
+  margin-bottom: 20px;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #f78fb0;
-    border-radius: 20px;
-    background-color: #f5e4e9;
-    
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #f7c0d0;
+  border-radius: 25px;
+  background-color: #fffafc;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
 }
 
+.form-group input::placeholder {
+  color: #f78fb0;
+}
+
+.form-group input:focus {
+  border-color: #f78fb0;
+  box-shadow: 0 0 8px rgba(247, 143, 176, 0.4);
+}
+
+/* Botón principal */
 .button-form {
-    width: auto; /* Esto hace que el ancho del botón se ajuste al contenido */
-    padding: 10px 100px; /* Aumenta el relleno para hacerlo más ancho y alto */
-    margin: 20px auto; /* Centra el botón y le da un margen superior e inferior */
-    display: block; /* Hace que el botón sea un bloque para que margin auto funcione */
-    background-color: #69283d;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center; /* Centra el texto dentro del botón */
+  width: 100%;
+  background-color: #f78fb0;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color:#af355c;
+.button-form:hover {
+  background-color: #ff5f8b;
+  box-shadow: 0 5px 15px rgba(247, 143, 176, 0.3);
 }
 
+/* Redirección al login */
+.login-redirect {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.login-redirect p {
+  display: inline;
+  color: #555;
+}
 
+.login-redirect h3 {
+  display: inline;
+  color: #f78fb0;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
+.login-redirect h3:hover {
+  color: #ff5f8b;
+}
 
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Responsivo */
+@media (max-width: 900px) {
+  .registro-container {
+    flex-direction: column;
+  }
+
+  .image-section, .form-registro-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-section {
+    height: 40vh;
+  }
+}

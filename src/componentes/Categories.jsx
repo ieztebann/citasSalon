@@ -5,9 +5,9 @@ export default function Categories() {
     { title: "Cuidado Facial", img: "img/categorias/Cuidado_Facial.jpg"},
     { title: "Pestañas", img: "img/categorias/Pestañas.jpg" },
     { title: "Cejas", img: "img/categorias/Cejas.jpg" },
-    { title: "Rostro", img: "img/categorias/Cejas.jpg" },
-    { title: "Uñas", img: "img/categorias/Cejas.jpg" },
-    { title: "Maquilllaje", img: "img/categorias/Cejas.jpg" },
+    { title: "Cabello", img: "img/categorias/cabello.jpg" },
+    { title: "Uñas", img: "img/categorias/uñas.jpg" },
+    { title: "Maquilllaje", img: "img/categorias/maquillaje.jpg" },
   ];
 
   return (

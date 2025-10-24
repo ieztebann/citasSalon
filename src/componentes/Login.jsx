@@ -46,7 +46,7 @@ export default function Login() {
   };
 
   const goRegister = () => {
-    navigate("/La-Bitacora-Del-Viajero/registro");
+    navigate("/Serenity-SPA/Registro");
   }
 
 
